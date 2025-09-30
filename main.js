@@ -23,9 +23,15 @@ function kaannos(event){
         return;
     }
     if(value == "Celcius"){
+      if(luku < -273.15){
+        alert('lämpötila on pienempi kuin absoluuttinen nollapiste')
+      }
       luku = luku *1.8;
         luku = luku +32;
     } else if(value == 'Farenheit'){
+      if(luku < -463.27){
+        alert('lämpötila on pienempi kuin absoluuttinen nollapiste')
+      }
       luku = luku -32;
       luku = luku /1.8
     }
