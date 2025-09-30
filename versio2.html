@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kaverilista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <section>
+        <h1>Lämpötilamuunnin</h1>
+    </section>
+    <section>
+        <form name="lisays">
+            <select name="asteet" id="astevalinta">
+                <option value="Celcius">Celcius -> Farenheit</option>
+                <option value="Farenheit">Farenheit -> Celcius</option>
+            </select>
+             <br>
+            <input type="text">
+            <input type="submit" value="Muunna">
+            <br>
+            <input type="radio" id="1desimaali" name="desimaali" value="1">
+            <label for="1desimaali">1 Desimaali</label><br>
+            <input type="radio" id="2desimaali" name="desimaali" value="2">
+            <label for="2desimaali">2 Desimaali</label><br>
+            <input type="radio" id="3desimaali" name="desimaali" value="3">
+            <label for="3desimaali">3 Desimaali</label>
+        </form>
+        <h2 id="tulos"></h2>
+        
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>     
